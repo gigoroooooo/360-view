@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>360ビュー</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+<style>
+body{
+    margin:0;
+}
+
+#panorama{
+    width:100vw;
+    height:100vh;
+}
+</style>
+</head>
+
+<body>
+
+<div id="panorama"></div>
+
+<script>
+pannellum.viewer('panorama', {
+    type: "equirectangular",
+    panorama: "ex.jpg",
+    autoLoad: true,
+    showZoomCtrl: true
+});
+</script>
+
+</body>
+</html>
